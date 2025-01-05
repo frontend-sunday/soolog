@@ -11,9 +11,14 @@
   "dependencies": {
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "^2.46.1",
+    "@tailwindcss/typography": "^0.5.15",
+    "@uiw/react-markdown-preview": "^5.1.3",
+    "@uiw/react-md-editor": "^3.6.0",
     "next": "15.0.2",
+    "next-remove-imports": "^1.0.12",
     "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028"
+    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "rehype-sanitize": "^6.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
