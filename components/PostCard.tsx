@@ -12,13 +12,13 @@ type PostCardProps = {
 
 export default function PostCard({ title, subtitle, created_at, id, thumbnail, updated_at }: PostCardProps) {
   return (
-    <Link key={id} href={`posts/${id}`}>
-      {thumbnail && <img src={thumbnail} alt={`${title}_thumbnail`} />}
-      <div>
-        <p>{title}</p>
-        <div>{updated_at ? updated_at : created_at}</div>
+    <Link key={id} href={`posts/${id}`} className="w-full block">
+      {thumbnail && <img src={thumbnail} alt={`${title}_thumbnail`} className="w-full rounded-t-xl h-auto" />}
+      <div className="p-4">
+        <p className="text-lg font-bold">{title}</p>
+        <p className="text-sm">{subtitle}</p>
+        <div className="text-sm">{updated_at ? updated_at : created_at}</div>
       </div>
-      <p>{subtitle}</p>
     </Link>
   );
 }
